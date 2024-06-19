@@ -317,13 +317,13 @@ async function bootFbl() {
     // mod._fblSetRelayServer(fbl, cServerIP, 7777);
     // mod._free(cServerIP);
 
-    let cAssetsServer = mod.stringToNewUTF8("https://identity-test.formabble.com");
-    mod._fblSetAssetsServer(fbl, cAssetsServer, cAssetsServer);
-    mod._free(cAssetsServer);
+    // let cAssetsServer = mod.stringToNewUTF8("https://identity-test.formabble.com");
+    // mod._fblSetAssetsServer(fbl, cAssetsServer, cAssetsServer);
+    // mod._free(cAssetsServer);
 
-    // var cIDServer = mod.stringToNewUTF8("http://127.0.0.1:9090");
-    // mod._fblSetIDServer(fbl, cIDServer);
-    // mod._free(cIDServer);
+    var cIDServer = mod.stringToNewUTF8("https://identity-test.formabble.com");
+    mod._fblSetIDServer(fbl, cIDServer);
+    mod._free(cIDServer);
   }
 
   instance.fbl = fbl;
