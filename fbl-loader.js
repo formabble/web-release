@@ -2,7 +2,8 @@ var fblTestScript = undefined;
 var fblRunSimple = undefined;
 
 import FblModule from "./fbl.js";
-const binaryPath = "fbl.wasm";
+// const binaryPath = "fbl.wasm";
+const binaryPath = "https://assets.formabble.com/fbl.wasm";
 
 // import FblModule from "./build-dbg/fbl-min-test.js";
 // const binaryPath = "build-dbg/fbl-min-test.wasm";
