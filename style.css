@@ -3,11 +3,13 @@ body {
   color: white;
 }
 .loader {
-  width: 200px;
-  height: 60px;
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
+}
+#rive-loader {
+  position: absolute;
   transform: translate(-50%, -50%);
 }
 .circle {
@@ -80,15 +82,16 @@ body {
   right: 15%;
   animation-delay: 0.3s;
 }
+.loader-text-offset {
+  top: 120px;
+}
 .loader span {
   position: absolute;
   left: 50%;
-  top: 75px;
   width: 300px;
   transform: translate(-50%, 0%);
   font-family: monospace;
   font-size: 18px;
-  /* letter-spacing: 12px; */
   text-align: center;
   color: #fff;
 }
@@ -114,6 +117,9 @@ body {
 }
 .hidden {
   display: none !important;
+}
+.invisible {
+  visibility: hidden !important;
 }
 @keyframes pulsate {
   0% {
