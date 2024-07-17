@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fragcolor.formabble",
+      "sha256_cert_fingerprints": [
+        "AE:22:88:A8:7B:BD:94:B5:BC:5B:4D:9C:97:86:7E:63:C9:85:90:D5:1B:F4:73:82:9A:0C:E2:71:13:85:97:EF"
+      ]
+    }
+  }
+]
