@@ -347,9 +347,11 @@ async function bootFbl() {
   mod._fblSetIDServer(fbl, cIDServer);
   mod._free(cIDServer);
 
-  var cOpenURL = mod.stringToNewUTF8(appOpenUrl);
-  mod._fblSetOpenUrl(fbl, cOpenURL);
-  mod._free(cOpenURL);
+  if (appOpenUrl) {
+    var cOpenURL = mod.stringToNewUTF8(appOpenUrl);
+    mod._fblSetOpenUrl(fbl, cOpenURL);
+    mod._free(cOpenURL);
+  }
 
   instance.fbl = fbl;
 
