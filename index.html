@@ -37,7 +37,7 @@
   <script type="module">
     const version = urlQuery["version"];
     if (version !== undefined) {
-      await import(`./fbl-loader-${version}.js`);
+      await import(`./versions/fbl-loader-${version}.js`);
     } else {
       await import("./versions/fbl-loader-d38bdf1.js");
     }
